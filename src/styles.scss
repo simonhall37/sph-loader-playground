@@ -1,4 +1,6 @@
 @use '@angular/material' as mat;
+@use "./app/components/loader/loader.component" as loader;
+@use "./app/components/loader-dots/loader-dots.component" as loader-dots;
 
 @include mat.core();
 
@@ -29,9 +31,13 @@ $dark-theme: mat.define-light-theme(
 );
 
 @include mat.all-component-themes($light-theme);
+@include loader.color($light-theme);
+@include loader-dots.color($light-theme);
 
 .darkMode {
   @include mat.all-component-colors($dark-theme);
+  @include loader.color($dark-theme);
+  @include loader-dots.color($dark-theme);
 }
 
 html,
