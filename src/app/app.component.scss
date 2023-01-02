@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 56px);
+}
+
+.darkMode .mat-drawer-container {
+    background-color: #303030;
+    color:white;
+}
