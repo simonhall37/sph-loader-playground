@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { LoaderComponent } from './components/loader/loader.component';
 import { LoaderDotsComponent } from './components/loader-dots/loader-dots.component';
+import { LoaderCogComponent } from './components/letter-dash/letter-dash.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { LoaderDotsComponent } from './components/loader-dots/loader-dots.compon
     ToolbarComponent,
     LoaderComponent,
     LoaderDotsComponent,
+    LoaderCogComponent,
   ],
   imports: [
     BrowserModule,
