@@ -2,6 +2,8 @@
 @use "./app/components/loader/loader.component" as loader;
 @use "./app/components/loader-dots/loader-dots.component" as loader-dots;
 @use "./app/components/letter-dash/letter-dash.component" as letter-dash;
+@use "./app/components/picture-draw/picture-draw.component" as picture-draw;
+@use "./app/components/cog-spin/cog-spin.component" as cog;
 
 @include mat.core();
 
@@ -35,12 +37,16 @@ $dark-theme: mat.define-light-theme(
 @include loader.color($light-theme);
 @include loader-dots.color($light-theme);
 @include letter-dash.color($light-theme);
+@include picture-draw.color($light-theme);
+@include cog.color($light-theme);
 
 .darkMode {
   @include mat.all-component-colors($dark-theme);
   @include loader.color($dark-theme);
   @include loader-dots.color($dark-theme);
   @include letter-dash.color($dark-theme);
+  @include picture-draw.color($dark-theme);
+  @include cog.color($dark-theme);
 }
 
 html,

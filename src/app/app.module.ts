@@ -11,6 +11,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { LoaderComponent } from './components/loader/loader.component';
 import { LoaderDotsComponent } from './components/loader-dots/loader-dots.component';
 import { LoaderCogComponent } from './components/letter-dash/letter-dash.component';
+import { PictureDrawComponent } from './components/picture-draw/picture-draw.component';
+import { CogSpinComponent } from './components/cog-spin/cog-spin.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { LoaderCogComponent } from './components/letter-dash/letter-dash.compone
     LoaderComponent,
     LoaderDotsComponent,
     LoaderCogComponent,
+    PictureDrawComponent,
+    CogSpinComponent,
   ],
   imports: [
     BrowserModule,
