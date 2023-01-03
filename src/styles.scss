@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use "./app/components/loader/loader.component" as loader;
+@use "./app/components/loader-dots/loader-dots.component" as loader-dots;
+@use "./app/components/letter-dash/letter-dash.component" as letter-dash;
+@use "./app/components/picture-draw/picture-draw.component" as picture-draw;
+@use "./app/components/cog-spin/cog-spin.component" as cog;
+@use "./app/components/loading-circle/loading-circle.component" as loading-circle;
+
+@include mat.core();
+
+$angular-primary: mat.define-palette(mat.$indigo-palette, 500, 100, 900);
+$angular-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$angular-warn: mat.define-palette(mat.$red-palette);
+
+$light-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $angular-primary,
+      accent: $angular-accent,
+      warn: $angular-warn,
+    ),
+  )
+);
+
+$dark-primary: mat.define-palette(mat.$pink-palette, 500, 100, 900);
+$dark-accent: mat.define-palette(mat.$blue-grey-palette, A200, A100, A400);
+
+$dark-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $dark-primary,
+      accent: $dark-accent,
+    ),
+  )
+);
+
+@include mat.all-component-themes($light-theme);
+@include loader.color($light-theme);
+@include loader-dots.color($light-theme);
+@include letter-dash.color($light-theme);
+@include picture-draw.color($light-theme);
+@include cog.color($light-theme);
+@include loading-circle.color($light-theme);
+
+.darkMode {
+  @include mat.all-component-colors($dark-theme);
+  @include loader.color($dark-theme);
+  @include loader-dots.color($dark-theme);
+  @include letter-dash.color($dark-theme);
+  @include picture-draw.color($dark-theme);
+  @include cog.color($dark-theme);
+  @include loading-circle.color($dark-theme);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}

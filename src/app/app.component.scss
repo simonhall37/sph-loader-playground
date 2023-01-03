@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 56px);
+  flex-direction: column;
+  gap: 40px;
+}
+
+.darkMode .mat-drawer-container {
+    background-color: #303030;
+    color:white;
+}
