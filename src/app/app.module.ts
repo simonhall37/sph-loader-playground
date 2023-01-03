@@ -13,6 +13,8 @@ import { LoaderDotsComponent } from './components/loader-dots/loader-dots.compon
 import { LoaderCogComponent } from './components/letter-dash/letter-dash.component';
 import { PictureDrawComponent } from './components/picture-draw/picture-draw.component';
 import { CogSpinComponent } from './components/cog-spin/cog-spin.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoadingCircleComponent } from './components/loading-circle/loading-circle.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { CogSpinComponent } from './components/cog-spin/cog-spin.component';
     LoaderCogComponent,
     PictureDrawComponent,
     CogSpinComponent,
+    LoadingCircleComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { CogSpinComponent } from './components/cog-spin/cog-spin.component';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
