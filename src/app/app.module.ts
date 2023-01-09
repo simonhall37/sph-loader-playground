@@ -34,7 +34,6 @@ import { LoadingCircleComponent } from './components/loading-circle/loading-circ
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
-    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

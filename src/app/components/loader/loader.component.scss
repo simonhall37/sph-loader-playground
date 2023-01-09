@@ -7,16 +7,9 @@
     #loading-spinner {
       animation: loading-spinner 1.5s linear infinite;
     }
-    #spinner-1 {
+    #spinner-1, #spinner-2, #spinner-3 {
       stop-color: mat.get-color-from-palette($primary-palette);
     }
-    #spinner-2 {
-      stop-color: mat.get-color-from-palette($primary-palette, 'A200');
-    }
-    #spinner-3 {
-      stop-color: mat.get-color-from-palette($primary-palette, 'A400');
-    }
-
   }
   
   @keyframes loading-spinner {
